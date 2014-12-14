@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Gaza fatalities</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/leaflet.fullscreen.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+		<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    </head>
+
+    <body>
+    	<div id="map" class="dark"></div>
+    	<div id="brush" class="ui-brush"></div>
+		<div id="legend" class='legend-content' style='display: none;'>
+			<div class='my-legend'>
+				<!-- <div class='legend-title'></div> -->
+				<div class='legend-scale'>
+					<ul class='legend-labels'>
+						<li><span class="gradient"></span>Population density</li>
+						<li><span class="circle" style="background: #d95f0e; background-opacity: 0.7"></span> Israelian fatalities</li>
+						<li><span class="circle" style="background: #007a3d; background-opacity: 0.7"></span> Palestinian fatalities</li>
+
+						<li><span class="img" style="background-image:url('maki/warehouse-18.svg');"></span> Shelter</li>
+						<li><span class="img" style="background-image:url('maki/hospital-18.svg');"></span> Hospital</li>
+						<li><span class="img" style="background-image:url('maki/college-18.svg');"></span> School</li>
+						<li><span class="img" style="background-image:url('maki/cross-18.svg');"></span> 
+							<span class="img" style="background-image:url('maki/police-18.svg');"></span> Crossing</li>
+						<li><span class="img" style="background-image:url('maki/circle-12.svg');"></span> Damage</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="source_legend" class='legend-content' style='display: none;'>
+			<div class='my-legend'>
+				<div class='legend-source'>
+					<strong>Sources : </strong>IMEMC | IDF | OCHA | Unitar/Unosat<br />
+					<strong>Maps : </strong>OSM | Mapbox | Google<br />
+				</div>
+			</div>
+		</div>
+    	
+    </body>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.js'></script>
+    <script type="text/javascript" src="js/google-layer.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script> 
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js' charset="utf-8"></script>
+    <script src="js/myscript.js"></script>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53487355-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</html>

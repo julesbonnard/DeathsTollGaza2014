@@ -1,0 +1,121 @@
+html,body {
+  width: 637px;
+  height: 100%;
+}
+#map {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+.signature {
+  text-align: right;
+}
+.noire {
+  width: 90%;
+  background-color: #ccc;
+  color: black;
+  font-size: smaller;
+  margin: auto;
+}
+.my-legend {
+    max-width: 150px;
+}
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 100%;
+}
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+.my-legend .legend-scale ul li {
+  font-size: 90%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+}
+.my-legend ul.legend-labels li .gradient {
+  width: 40px;
+  height: 15px;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #a6bddb 0%, #74a9cf 20%, #3690c0 40%, #0570b0 60%, #045a8d 80%, #023858 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(0%,#a6bddb), color-stop(20%,#74a9cf), color-stop(40%,#3690c0), color-stop(60%,#0570b0), color-stop(80%,#045a8d), color-stop(100%,#023858)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #1e5799 0%,#a6bddb 0%,#74a9cf 20%,#3690c0 40%,#0570b0 60%,#045a8d 80%,#023858 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #1e5799 0%,#a6bddb 0%,#74a9cf 20%,#3690c0 40%,#0570b0 60%,#045a8d 80%,#023858 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #1e5799 0%,#a6bddb 0%,#74a9cf 20%,#3690c0 40%,#0570b0 60%,#045a8d 80%,#023858 100%); /* IE10+ */
+  background: linear-gradient(to right, #1e5799 0%,#a6bddb 0%,#74a9cf 20%,#3690c0 40%,#0570b0 60%,#045a8d 80%,#023858 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#023858',GradientType=1 ); /* IE6-9 */
+}
+
+.my-legend ul.legend-labels li .img {
+  border: 0px;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.my-legend ul.legend-labels li .circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.my-legend .legend-source {
+  font-size: 80%;
+  color: #999;
+  clear: both;
+}
+.my-legend a {
+  color: #777;
+}
+#brush {
+  /*position:absolute;
+  bottom:0;right:0;left:0;*/
+  height:100px;
+}
+#brush svg {
+  /*background: #d9d9d9;*/
+}
+.brush .extent {
+  stroke:#fff;
+  fill-opacity:0.125;
+  shape-rendering:crispEdges;
+}
+.y.axis path, .y.axis line
+{
+  fill: none;
+  stroke: #777;
+  shape-rendering: crispEdges;
+}
+.x.axis path, .x.axis line
+{
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.axis text
+{
+  font-family: 'Source Sans Pro';
+  font-size: 13px;
+  fill: black;
+}
+.tick
+{
+  stroke-dasharray: 1, 2;
+}
